@@ -1,11 +1,12 @@
 import React from "react";
-import Herobanner from "./HeroBanner";
 import { Box } from "@mui/material";
+
+import { HeroBanner } from "../index";
 
 function Home() {
   return (
     <Box>
-      <Herobanner />
+      <HeroBanner />
     </Box>
   );
 }
