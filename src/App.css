@@ -17,6 +17,9 @@ html {
   text-decoration: none;
   outline: none;
 }
+a {
+  text-decoration: none;
+}
 
 ::-webkit-scrollbar {
   width: 0px;
@@ -146,4 +149,7 @@ html {
   .exercise-card {
     width: 280px;
   }
+}
+a.active {
+  border-bottom: 0.2rem solid #e74c3c;
 }
