@@ -3,7 +3,7 @@ import HeroBannerImage from "../../assets/images/banner.png";
 import "./HeroBanner.css";
 const Herobanner = () => {
   return (
-    <Box sx={{ mt: { lg: "10rem", xs: "7rem" }, ml: { sm: "5rem" } }}>
+    <Box sx={{ mt: { lg: "10rem", xs: "7rem" }, ml: { xs: "5rem" } }}>
       <Typography sx={{ color: "#e74c3c", fontSize: "2.6rem", fontWeight: 600 }} variant="h6">
         Fitness Club
       </Typography>
@@ -11,7 +11,7 @@ const Herobanner = () => {
         Sweat, Smile <br />
         And Repeat
       </Typography>
-      <Typography fontSize="22px" fontFamily="Alegreya" lineHeight="35px">
+      <Typography sx={{ fontSize: { lg: "2.2rem", sm: "1.5rem", xs: "2.5rem" } }} fontFamily="Alegreya" lineHeight="2.5rem">
         Check out the most effective exercises personalized to you
       </Typography>
       <Stack>

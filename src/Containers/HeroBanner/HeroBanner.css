@@ -4,6 +4,7 @@
   top: 0%;
   width: 70rem;
   height: 60rem;
+  z-index: -1;
 }
 .hero-btn {
   margin-top: 4.5rem;
@@ -22,6 +23,12 @@
   background-color: #c0392b;
 }
 @media screen and (max-width: 1200px) {
+  .hero-banner-img {
+    width: 50rem;
+    height: 50rem;
+  }
+}
+@media screen and (max-width: 930px) {
   .hero-banner-img {
     display: none;
   }

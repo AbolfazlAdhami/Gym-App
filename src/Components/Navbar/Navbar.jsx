@@ -10,7 +10,7 @@ function Navbar() {
       <Link to="/">
         <img src={Logo} alt="logoImage" style={{ width: "10rem", objectFit: "cover", textDecoration: "none" }} />
       </Link>
-      <Stack sx={{ fontSize: "1.8rem" }} direction={"row"} gap={2}>
+      <Stack sx={{ fontSize: "3rem", ml: "4rem" }} direction={"row"} gap={"3rem"}>
         <NavLink to={"/"} style={{ color: "#2c3e50", transition: "all 0.3s ease" }}>
           Home
         </NavLink>
