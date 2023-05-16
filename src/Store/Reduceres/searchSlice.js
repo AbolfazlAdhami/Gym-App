@@ -2,7 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const searchSlice = createSlice({
   name: "search",
-  initState: {
+  initState:{
     query: "",
     feed: [],
     status: "idle", // "idle" "succses" "errore" "faild"

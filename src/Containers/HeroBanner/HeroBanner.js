@@ -3,7 +3,7 @@ import HeroBannerImage from "../../assets/images/banner.png";
 import "./HeroBanner.css";
 const Herobanner = () => {
   return (
-    <Box sx={{ mt: { lg: "10rem", xs: "7rem" }, ml: { xs: "5rem" } }}>
+    <Box sx={{ mt: { lg: "10rem", xs: "7rem" }, ml: { xs: "5rem" }, mb: "12rem" }}>
       <Typography sx={{ color: "#e74c3c", fontSize: "2.6rem", fontWeight: 600 }} variant="h6">
         Fitness Club
       </Typography>
