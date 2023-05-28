@@ -23,7 +23,6 @@ export const fetchSearchExsercise = createAsyncThunk("exsercise/fetchSearchExser
 
 const initialState = {
   exseeciseList: [],
-
   status: "idle", // "loading" "success" "error" "idle"
 };
 
