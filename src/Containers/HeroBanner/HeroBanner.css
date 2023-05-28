@@ -24,12 +24,6 @@
 }
 @media screen and (max-width: 1200px) {
   .hero-banner-img {
-    width: 50rem;
-    height: 50rem;
-  }
-}
-@media screen and (max-width: 930px) {
-  .hero-banner-img {
     display: none;
   }
 }

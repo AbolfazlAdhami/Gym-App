@@ -1,11 +1,19 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useState } from "react";
 import { Box, Button, Stack, TextField, Typography } from "@mui/material";
-import { fetchExsercise } from "../../Data/FetchData";
+
+// Component Importes
+import HorizontalScrollbar from "../HorizontalScrollbar/HorizontalScrollbar";
+
+import { useDispatch } from "react-redux";
+import { fetchSearchExsercise } from "../../Store/Reduceres/exserciseSlice";
+
+// Component Importes
+
 function SearchBox() {
   const [search, setSearch] = useState("");
-  useEffect(() => {
-    fetchExsercise();
-  }, [search]);
+
+  const dispatch = useDispatch();
+  // FetchData for Search Exersices
 
   return (
     <Stack justifyContent={"center"} alignItems={"center"} mt={"10rem"} px={"2rem"} py={"3rem"}>
@@ -31,6 +39,7 @@ function SearchBox() {
         />
         <Button
           className="search-btn"
+          onClick={() => dispatch(fetchSearchExsercise(search))}
           sx={{
             bgcolor: "#e74c3c",
             color: "#f5f5f5",
@@ -48,6 +57,9 @@ function SearchBox() {
         >
           Search
         </Button>
+      </Box>
+      <Box sx={{ overflowX: "auto", width: { sx: "auto", md: "100vw" } }}>
+        <HorizontalScrollbar />
       </Box>
     </Stack>
   );
