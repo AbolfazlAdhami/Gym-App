@@ -23,6 +23,13 @@ const bodyPart = createSlice({
         return state;
       },
     },
+    resetValueBodyPartes: {
+      reducer(state, action) {
+        state.currentValue = null;
+        state.status = "idle";
+        return state;
+      },
+    },
   },
   extraReducers(builder) {
     builder
@@ -43,6 +50,6 @@ const bodyPart = createSlice({
   },
 });
 
-export const { changeValue } = bodyPart.actions;
+export const { changeValue, resetValueBodyPartes } = bodyPart.actions;
 
 export default bodyPart.reducer;

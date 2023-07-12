@@ -1,7 +1,8 @@
 {
-    "workbench.colorCustomizations": {
-        "activityBar.background": "#043612",
-        "titleBar.activeBackground": "#064B1A",
-        "titleBar.activeForeground": "#EFFEF3"
-    }
+  "files.autoSave": "onFocusChange",
+  "editor.wordWrap": "on",
+  "editor.mouseWheelZoom": true,
+  "editor.lineNumbers": "off",
+  "prettier.printWidth": 200,
+  "editor.tabCompletion": "off"
 }

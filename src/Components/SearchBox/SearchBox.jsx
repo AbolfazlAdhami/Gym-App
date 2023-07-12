@@ -1,6 +1,6 @@
-import React, { useContext, useState } from "react";
+import React, { useState } from "react";
 import { Box, Button, Stack, TextField, Typography } from "@mui/material";
-
+import { resetValueBodyPartes } from "../../Store/Reduceres/bodyPartSlice";
 // Component Importes
 import HorizontalScrollbar from "../HorizontalScrollbar/HorizontalScrollbar";
 
@@ -14,6 +14,10 @@ function SearchBox() {
 
   const dispatch = useDispatch();
   // FetchData for Search Exersices
+  const handelSearch = () => {
+    dispatch(fetchSearchExsercise(search));
+    dispatch(resetValueBodyPartes());
+  };
 
   return (
     <Stack justifyContent={"center"} alignItems={"center"} mt={"10rem"} px={"2rem"} py={"3rem"}>
@@ -39,7 +43,7 @@ function SearchBox() {
         />
         <Button
           className="search-btn"
-          onClick={() => dispatch(fetchSearchExsercise(search))}
+          onClick={handelSearch}
           sx={{
             bgcolor: "#e74c3c",
             color: "#f5f5f5",
