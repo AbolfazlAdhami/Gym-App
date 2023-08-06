@@ -62,7 +62,7 @@ a.active {
   overflow-x: hidden;
   display: flex;
   flex-wrap: wrap;
-  height: 40rem;
+  height: 100%;
 }
 
 .detail-image {

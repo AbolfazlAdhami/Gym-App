@@ -1,5 +1,5 @@
 import React, { useContext, useDeferredValue } from "react";
-import { useSelector } from "react-redux";
+
 import { Box, Stack, Typography } from "@mui/material";
 
 import { ScrollMenu, VisibilityContext } from "react-horizontal-scrolling-menu";
@@ -28,13 +28,13 @@ const RightArrow = () => {
   );
 };
 const Exercisescrollbar = ({ data }) => {
-  const use = useDeferredValue(data);
-  console.log(data);
+  const dataDeff = useDeferredValue(data);
+
   return (
-    <Stack sx={{ width: "100%", height: "40rem", overflowX: "hidden" }}>
+    <Stack sx={{ width: "100%", height: "60rem", overflowX: "hidden" }}>
       <ScrollMenu LeftArrow={LeftArrow} RightArrow={RightArrow}>
         {data?.map((item) => (
-          <Box key={item.id || item} itemId={item.id || item} title={item.id || item} m="0 40px">
+          <Box key={item.id || item} itemId={item.id || item} title={item.id || item} m="0 10px">
             <ExerciseCard exercise={item} />
           </Box>
         ))}
