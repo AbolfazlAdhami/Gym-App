@@ -13,19 +13,19 @@ function ExerciseDetails() {
   const [exercise, setExercise] = useState({});
   const getExercise = async () => {
     const data = await fetchData(`https://exercisedb.p.rapidapi.com/exercises/exercise/${id}`);
-    console.log(data);
+
     setExercise({ ...data });
-    console.log(exercise);
   };
   useEffect(() => {
     getExercise();
+    window.scrollTo({ top: 0, behavior: "smooth" });
   }, [id]);
 
   return (
     <>
       <Details exerciseDetails={exercise} />
-      <ExerciseVideos />
-      <SimilarExercises />
+      <ExerciseVideos name={exercise?.name} key={exercise?.name} />
+      <SimilarExercises equipment={exercise?.equipment} target={exercise?.target} />
     </>
   );
 }
