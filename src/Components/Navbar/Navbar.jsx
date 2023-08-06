@@ -15,13 +15,13 @@ function Navbar() {
         </NavLink>
 
         <a
-          href="#exsersise"
+          href="/#exercises"
           style={{
             color: "#2c3e50",
             textDecoration: "none",
           }}
         >
-          Exsersise
+          Exercises
         </a>
       </Stack>
     </Stack>

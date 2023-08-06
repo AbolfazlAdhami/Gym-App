@@ -7,7 +7,7 @@ import { changeValue } from "../../Store/Reduceres/bodyPartSlice";
 const BodyPart = ({ name }) => {
   const dispatch = useDispatch();
   const { currentValue } = useSelector((state) => state.bodyPart);
-  console.log(currentValue);
+
   return (
     <Stack
       type="button"
@@ -21,21 +21,23 @@ const BodyPart = ({ name }) => {
               background: "#fff",
               borderBottomLeftRadius: "2.5rem",
               width: "270px",
-              height: "282px",
+              height: "280px",
               cursor: "pointer",
               gap: "47px",
               boxShadow: "rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset",
               transition: "all ease 0.3s",
+              m: "0 2rem",
             }
           : {
               background: "#fff",
               borderBottomLeftRadius: "20px",
               width: "270px",
-              height: "282px",
+              height: "280px",
               cursor: "pointer",
               gap: "4rem",
               boxShadow: "rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px",
               transition: "all ease 0.3s",
+              m: "0 2rem",
             }
       }
       onClick={() => {

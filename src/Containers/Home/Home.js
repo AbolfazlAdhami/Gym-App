@@ -8,7 +8,7 @@ function Home() {
     <Box>
       <HeroBanner />
       <SearchBox />
-      {/* <Exercises /> */}
+      <Exercises />
     </Box>
   );
 }

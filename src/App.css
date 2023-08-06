@@ -4,11 +4,19 @@ body {
   background-color: #fffafb;
   width: 100%;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 html {
   font-size: 10px;
 }
 
+a {
+  text-decoration: none;
+  transition: all linear 0.3s;
+}
+a.active {
+  text-decoration: underline;
+}
 * {
   padding: 0px;
   margin: 0px;
@@ -32,7 +40,7 @@ html {
   font-size: 25px;
   border-radius: 4px;
   position: absolute;
-  bottom: -1000px;
+  bottom: -450px;
   transform: scale(1, 1);
   right: 80px;
   transition: 0.3s all ease-in-out;
@@ -48,15 +56,13 @@ html {
 }
 
 .react-horizontal-scrolling-menu--wrapper {
-  width: 100%;
+  padding: 0;
+  margin: 0;
+  width: 100vw;
+  overflow-x: hidden;
   display: flex;
   flex-wrap: wrap;
-}
-
-.react-horizontal-scrolling-menu--wrapper {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
+  height: 40rem;
 }
 
 .detail-image {
@@ -90,7 +96,7 @@ html {
 
 .exercise-card:hover,
 .bodyPart-card:hover {
-  transform: scale(1.05, 1.05);
+  transform: scale(1.02);
 }
 
 .search-btn:hover {
@@ -114,7 +120,7 @@ html {
   }
 
   .react-horizontal-scrolling-menu--scroll-container {
-    width: 500px;
+    /* width: 500px; */
   }
 
   .left-arrow,

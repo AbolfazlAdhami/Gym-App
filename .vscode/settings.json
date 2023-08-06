@@ -4,5 +4,10 @@
   "editor.mouseWheelZoom": true,
   "editor.lineNumbers": "off",
   "prettier.printWidth": 200,
-  "editor.tabCompletion": "off"
+  "editor.tabCompletion": "off",
+  "workbench.colorCustomizations": {
+    "activityBar.background": "#1F2E43",
+    "titleBar.activeBackground": "#2B415E",
+    "titleBar.activeForeground": "#F9FAFC"
+  }
 }

@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import ContextProvider from "./Context/mainContext";
-import { Routes, Route } from "react-router";
+
 import Navbar from "./Components/Navbar/Navbar";
 import { ExerciseDetails, Home } from "./Containers/index";
 
@@ -8,6 +8,7 @@ import { ExerciseDetails, Home } from "./Containers/index";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchBodyPart } from "./Store/Reduceres/bodyPartSlice";
 import { fetchSearchExsercise, fetchExsercisTarget } from "./Store/Reduceres/exserciseSlice";
+import { Route, Routes } from "react-router-dom";
 
 const App = () => {
   const { currentValue } = useSelector((state) => state.bodyPart);
@@ -29,7 +30,7 @@ const App = () => {
         <Navbar />
         <Routes>
           <Route index path="/" element={<Home />} />
-          {/* <Route path="/exerciseDetails/:id" element={<ExerciseDetails />} /> */}
+          <Route path="/exerciseDetails/:id" element={<ExerciseDetails />} />
         </Routes>
       </ContextProvider>
     </div>

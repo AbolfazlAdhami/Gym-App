@@ -1,7 +1,6 @@
 import axios from "axios";
 
 const Access_Code = "5365562dc8msh06f2cc3162c0280p1fdfe0jsn6f7d79da7344";
-
 // Fetch Exsersice Data
 
 export const fetchData = async (query) => {
@@ -14,6 +13,8 @@ export const fetchData = async (query) => {
     },
   };
   const { data, status } = await axios.request(exerciseOption);
-  console.log(data);
-  if (status == 200) return data;
+
+  if (status === 200) return data;
 };
+
+// export const fetchVideos =  ;
